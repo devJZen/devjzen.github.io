@@ -11,11 +11,17 @@
     {% for key in keys %}
       {% assign post_count = 0 %}
       {% for post in site.posts %}
-        {% assign post_date = post.date | date: filter %}
-        {% if post_date == key %}
+      {% if field == 'date' %}
+        {% assign post_val = post.date | date: filter %}
+        {% if post_val == key %}
           {% assign post_count = post_count | plus: 1 %}
         {% endif %}
-      {% endfor %}
+      {% elsif field == 'categories' %}
+        {% if post.categories contains key %}
+          {% assign post_count = post_count | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
 
       <h2 id="{{ key }}" class="segment-name">
         {{ key }} ({{ post_count }})
@@ -25,13 +31,20 @@
       </h2>
 
       <div class="segment-items" id="segment-{{ key }}" {% if post_count > 5 %}style="display: none;"{% endif %}>
-        {% for post in site.posts %}
-          {% assign post_date = post.date | date: filter %}
-          {% if post_date == key %}
+       {% for post in site.posts %}
+        {% if field == 'date' %}
+          {% assign post_val = post.date | date: filter %}
+          {% if post_val == key %}
             {% assign item = post %}
-          <li> {% include views/post-item.html %} </li>
+            <li>{% include views/post-item.html %}</li>
           {% endif %}
-        {% endfor %}
+        {% elsif field == 'categories' %}
+          {% if post.categories contains key %}
+            {% assign item = post %}
+            <li>{% include views/post-item.html %}</li>
+          {% endif %}
+        {% endif %}
+       {% endfor %}
       </div>
     {% endfor %}
   </ul>
