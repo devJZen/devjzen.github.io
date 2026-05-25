@@ -2,7 +2,7 @@
 layout: post
 title: Observability란 무엇인가?
 categories: study
-tags: [Observability]
+tags: [study]
 ---
 
 ## 관찰 가능성, Observability
