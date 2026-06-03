@@ -9,7 +9,7 @@ tags: [study]
 
 Supabase RLS (Row Level Security) 정책
 
-> CRUD 생성 중에 Delete가 안되고 있음
+> CRUD 생성 중에 Delete가 안 되고 있음
 
 Supabase로 개발하다가 삭제가 구현이 안될 때가 있다. RLS 정책 때문인데 아래와 같이 해결하면 된다.
 

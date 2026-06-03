@@ -30,7 +30,7 @@ http 메서드를 찾아보며 보고 또 봐도 까먹는다. 그럼 또 찾아
 
 > 통합 자원 식별자(Uniform Resource Identifier, URI)는 인터넷에 있는 자원을 나타내는 유일한 주소이다. URI의 존재는 인터넷에서 요구되는 기본조건으로서 인터넷 프로토콜에 항상 붙어 다닌다.[^1]
 
-URI는 인터넷 상의 자원을 표기하는 방법으로써, schema를 나타내기도 한다.
+URI는 인터넷 상의 자원을 표기하는 방법으로서, schema를 나타내기도 한다.
 
 `scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]` ([참조](https://developer.mozilla.org/ko/docs/Glossary/URI))
 

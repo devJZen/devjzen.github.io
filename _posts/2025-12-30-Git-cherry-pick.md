@@ -26,7 +26,7 @@ git-cherry-pick: 기존 커밋에서 도입된 변경 사항을 적용합니다.
 
 ## Solution
 
-> 브랜치 포인터를 확인해야되므로 revert가 아닌 cherry pick을 사용한다.
+> 브랜치 포인터를 확인해야 하므로 revert가 아닌 cherry pick을 사용한다.
 
   1. 현재 상태 확인
   git status
