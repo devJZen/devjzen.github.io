@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="kor"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://devjzen.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://devjzen.github.io//" rel="alternate" type="text/html" hreflang="kor" /><updated>2026-06-17T10:53:11+00:00</updated><id>https://devjzen.github.io//feed.xml</id><title type="html">devJZen</title><subtitle>Research interests: Byzantine Fault Tolerance, consensus protocols, and low-level systems security.</subtitle><author><name>devJZen</name></author><entry><title type="html"></title><link href="https://devjzen.github.io//2026/06/17/2026-06-03-Study-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html" rel="alternate" type="text/html" title="" /><published>2026-06-17T10:53:11+00:00</published><updated>2026-06-17T10:53:11+00:00</updated><id>https://devjzen.github.io//2026/06/17/2026-06-03-Study-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="https://devjzen.github.io//2026/06/17/2026-06-03-Study-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html"><![CDATA[<h2 id="알고리즘-문제의-저작권에-대하여">알고리즘 문제의 저작권에 대하여</h2>
+
+<blockquote>
+  <p>문제에도 저작권이 존재한다.</p>
+</blockquote>
+
+<p>알고리즘 스터디를 준비하며 양질의 자료를 쓸 수 없기에 wiki의 searching and sorting을 사용하려고 했으나 문제 수가 부족하다고 느꼈다. leetcode의 two sum부터 생각의 흐름을 손으로 직접 작성해보고 클로드한테 해달라고 했는데 비상업 사용은 된다고 하지만 문제를 그대로 가져오거나 배포용도로 쓰면 안된다고 한다. 너무 당당하게 몰랐다고 해봤자 달라질 것은 없으니 우선 게시글을 내렸다. 그리고 원래 작성했던 CRLF이 알고리즘으로 덮어쓰기 돼서 고민이었는데 올린 커밋을 삭제할 수 있는 좋은 라이브러리를 알게 됐다.</p>
+
+<p>leetcode의 지문은 게시하지 않고 컴파일 통과된 결과를 공유했으나 알고리즘 답변 공유도 그냥 leetcode 커뮤니티 내에서 하는게 가장 마음 편하다는 것을 알게 됐다.
+그리고 내 약점인 알고리즘 공부방법에 대해서 고찰해 보았다. 항상 같은 문제가 주어지는 것도 아닐텐데 어떻게 익숙해질까? 그냥 연습을 많이하고 지금은 BOJ가 닫혀있으니 leetcode를 꾸준히 이용하는게 나을 것 같다. 물론 국내는 프로그래머스를 많이 쓰지만 leetcode가 더 익숙하다.</p>
+
+<p>leetcode 알고리즘 문제를 풀다가 느낀 것.
+알고리즘 공부보다 자료구조를 공부해야 내가 구현하고 싶다던 알고리즘을 수식으로 표현하고
+그걸 다시 코드로 만들 수 있다는 것이다. 그렇다고 책에 있는 문제를 올리거나 답변을 공유하는 것도 안되는데 어떻게 기록해야될까? 그냥 leetcode로 problem-solve를 하거나 스터디했던 내용에서 솔루션을 전부 제거하면 될까?
+우선 중요한 개념을 확인하는 testJunit을 작성하려고 한다.</p>]]></content><author><name>devJZen</name></author></entry><entry><title type="html"></title><link href="https://devjzen.github.io//2026/06/17/2026-06-06-web-JS.html" rel="alternate" type="text/html" title="" /><published>2026-06-17T10:53:11+00:00</published><updated>2026-06-17T10:53:11+00:00</updated><id>https://devjzen.github.io//2026/06/17/2026-06-06-web-JS</id><content type="html" xml:base="https://devjzen.github.io//2026/06/17/2026-06-06-web-JS.html"><![CDATA[<h2 id="목차">목차</h2>
+<ol>
+  <li><a href="### 날짜: JS에서 제공하는 메서드">날짜 관련 메서드</a></li>
+  <li><a href="#### 날짜: 기존 방식">const와 let의 차이</a></li>
+  <li><a href=""></a></li>
+</ol>
+
+<p>오픈소스 활동을 하다보니 이제서야 개발 감각이 돌아오는 것 같다. 디버깅하는 재미에 빠져있는데 더 즐겨봐야겠다.
+그리고 직접 글을 쓰는 활동이 퀄리티가 낮다고 생각했는데 AI에게 질문하며 개발하니 나의 대화 수준이 퇴화되는 것을 많이 느꼈다. 힘들더라도 책을 가까이 하고 깔끔한 글을 써보도록 노력하려고 한다.</p>
+
+<p>매번 더 낫게, 더 좋게를 고집했으나 의사결정 해주는 상급자가 없으니까 이거저거 다 해보고 삽질하며 늘어나는게 내 실력인지 그냥 지적허영인지 구분이 안 가기 시작했다. 제일 작은 단위로 가장 쉬운것부터 개발하라는게 싫어서 끝까지 고집부렸는데 아집이 되기 전에 알게 되어서 고맙다는 생각도 들었다.</p>
+
+<h3 id="날짜-js에서-제공하는-메서드">날짜: JS에서 제공하는 메서드</h3>
+
+<blockquote>
+  <p>언제까지 getDate만 쓸 것인가?</p>
+</blockquote>
+
+<p>js 메서드 공부를 하다가 tolSOString()을 알게됐다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">const</span> <span class="nx">today</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">splitT</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">toISOString</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">T</span><span class="dl">"</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">splitT</span><span class="p">.[</span><span class="mi">0</span><span class="p">]);</span>
+
+</code></pre></div></div>
+
+<p>ISO 기준이기에 시간도 표준이다. 시차를 KST에 맞춰줘야 된다.
+T를 기준으로 나누면 날짜와 시간을 분리해서 가져오기 좋다.
+toLocaleString을 통해서 시차를 보정할 수 있고 또는 국제 표준에서 KST를 계산하여 보정할 수 있다.</p>
+
+<p>ref: <a href="https://www.w3schools.com/jsref/jsref_toisostring.asp">w3school</a>, <a href="https://coreui.io/answers/how-to-format-date-as-yyyy-mm-dd-in-javascript/">coreui</a></p>
+
+<h4 id="날짜-기존-방식">날짜: 기존 방식</h4>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">const</span> <span class="nx">today</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">day</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">month</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">year</span> <span class="o">=</span> <span class="nx">today</span><span class="p">.</span><span class="nx">getYear</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">day</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">-</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">month</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">-</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">year</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<p>또는</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nx">ymdformatter</span><span class="p">();{</span>
+<span class="c1">//year+month+day</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>구현이 매우 간단하다. 그러나 반복되면 포매터를 만들어서 그냥 공통으로 쓰고 가져와서 쓰도록 한다.</p>
+
+<h3 id="const와-let-var의-차이">const와 let, var의 차이</h3>
+
+<blockquote>
+  <p>재 할당 아니던가?</p>
+</blockquote>
+
+<p>let은 선언 후 나중에 값 할당이 되고 const는 안된다.
+프론트는 신경쓰기 싫어서, sql문법과 비슷하다는 이유로, 그냥 편하니까 많이 썼는데 이러면 안된다고 해서 확실하게 구분해서 쓰려고 한다.</p>
+
+<p>ref: <a href="https://www.reddit.com/r/learnjavascript/comments/qtwuc3/what_is_the_difference_between_var_const_and_let/?tl=ko">reddit</a></p>
+
+<h4 id="scope와-재사용에-대하여">Scope와 재사용에 대하여</h4>
+
+<p>var를 쓰면 예측하기 어렵기에 const와 let을 명확하게 구분하여 사용하도록 한다.
+표준에 가까운 코딩은 const다.</p>]]></content><author><name>devJZen</name></author></entry><entry><title type="html">스프링 101</title><link href="https://devjzen.github.io//java(web)/2026/05/30/Spring-Spring+Java101.html" rel="alternate" type="text/html" title="스프링 101" /><published>2026-05-30T00:00:00+00:00</published><updated>2026-05-30T00:00:00+00:00</updated><id>https://devjzen.github.io//java(web)/2026/05/30/Spring-Spring+Java101</id><content type="html" xml:base="https://devjzen.github.io//java(web)/2026/05/30/Spring-Spring+Java101.html"><![CDATA[<h2 id="목차">목차</h2>
+<ol>
+  <li>스프링부트 스타터(SpringBoot initializr)</li>
+  <li>MVC, 디자인 패턴</li>
+  <li>Spring Security</li>
+  <li>객체지향</li>
+  <li>매퍼</li>
+  <li>세션 관리</li>
+  <li>Vue에 대하여</li>
+  <li>웹 보안에 대하여</li>
+  <li>ajax와 axios</li>
+  <li>Redis는 왜 쓸까?</li>
+  <li>Oracle과 PostgreSQL</li>
+  <li>DB 설계와 ERD</li>
+  <li></li>
+</ol>]]></content><author><name>devJZen</name></author><category term="java(web)" /><category term="spring" /><summary type="html"><![CDATA[목차 스프링부트 스타터(SpringBoot initializr) MVC, 디자인 패턴 Spring Security 객체지향 매퍼 세션 관리 Vue에 대하여 웹 보안에 대하여 ajax와 axios Redis는 왜 쓸까? Oracle과 PostgreSQL DB 설계와 ERD]]></summary></entry><entry><title type="html">ICM20602</title><link href="https://devjzen.github.io//drone/2026/05/27/Drone-icm20602.html" rel="alternate" type="text/html" title="ICM20602" /><published>2026-05-27T00:00:00+00:00</published><updated>2026-05-27T00:00:00+00:00</updated><id>https://devjzen.github.io//drone/2026/05/27/Drone-icm20602</id><content type="html" xml:base="https://devjzen.github.io//drone/2026/05/27/Drone-icm20602.html"><![CDATA[<h2 id="driver-icm20602">Driver: ICM20602</h2>
+
+<p><img src="/assets/images/posting/icm20602.png" alt="question list" /></p>
+
+<p>ICM20602는 센서의 일종으로 드라이버로 분류하여 봤다.
+6축 모션 트랙킹을 지원한다. 저전력 모델로 모닝 웨이크 인터럽트를 할 수 있다.</p>
+
+<blockquote>
+  <p>[!note] IMU<br />
+IMU(Inertial Measurement Unit)은 관성 측정 장치다. 주로 물체의 가속도, 각속도, 방향 등을 측정한다.<br />
+3축, 6축, 10축 센서로 활용한다.</p>
+</blockquote>
+
+<h2 id="datasheet-보는-방법">DataSheet 보는 방법</h2>
+
+<p>와..정말 답이 없다 수준이었는데 그냥 자주 보고 모르는 것은 llm을 활용해서 어떻게든 채우려고 애썼다.
+가장 어려운 부분은 수식 연산과 센서의 역학 관계다. 오차범위가 왜 존재하는지 전혀 이해를 못 했는데 비행체를 생각하니 쉬웠다.
+물체는 3차원 방향벡터로 생각하여 Aceelerometer는 x,y,z값을 갖고 있고 중력이 존재하기에 중력가속도로 계산한다.
+Gyroscope는 각속도로 물체의 회전 속도를 측정한다. 비행체는 공기의 저항을 받으며 날아다니고 중심축에 따라서 활강한다.
+수직, 하강시에 안전 착륙 속도까지 생각하려니까 정말 막막했다.
+막상 하면 별 거 아닌데..Magnetometer는 지자기 센서인데 ICM20602에서는 지원하지 않는다.</p>
+
+<h2 id="센서-흐름도">센서 흐름도</h2>
+
+<p>추후에 코드리뷰 후에 수정</p>]]></content><author><name>devJZen</name></author><category term="Drone" /><category term="Drone" /><summary type="html"><![CDATA[Driver: ICM20602]]></summary></entry><entry><title type="html">네이버 지도 iframe으로 가져오기</title><link href="https://devjzen.github.io//study/2026/05/27/web-%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%A7%80%EB%8F%84.html" rel="alternate" type="text/html" title="네이버 지도 iframe으로 가져오기" /><published>2026-05-27T00:00:00+00:00</published><updated>2026-05-27T00:00:00+00:00</updated><id>https://devjzen.github.io//study/2026/05/27/web-%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%A7%80%EB%8F%84</id><content type="html" xml:base="https://devjzen.github.io//study/2026/05/27/web-%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%A7%80%EB%8F%84.html"><![CDATA[<h2 id="네이버-지도--iframe으로-가져오기">네이버 지도  iframe으로 가져오기</h2>
+
+<blockquote>
+  <p>굳이 api가 필요 없을 때 사용한다.</p>
+</blockquote>
+
+<pre><code class="language-iframe"> &lt;iframe
+          src="https://map.naver.com/p/entry/place/플레이스id넣으면됨?placePath=/home&amp;embedMode=iframe"
+          width="100%"
+          height="700"
+          frameborder="0"
+          style="display:block;"
+          loading="lazy"
+          allow="geolocation"
+  /&gt;
+</code></pre>
+
+<p><img src="/assets/images/posting/naverMap.png" alt="가져온 모습" /></p>]]></content><author><name>devJZen</name></author><category term="study" /><category term="web" /><summary type="html"><![CDATA[네이버 지도 iframe으로 가져오기]]></summary></entry><entry><title type="html">드론으로 다시 개발 시작</title><link href="https://devjzen.github.io//diary/2026/05/10/Diary-New.html" rel="alternate" type="text/html" title="드론으로 다시 개발 시작" /><published>2026-05-10T00:00:00+00:00</published><updated>2026-05-10T00:00:00+00:00</updated><id>https://devjzen.github.io//diary/2026/05/10/Diary-New</id><content type="html" xml:base="https://devjzen.github.io//diary/2026/05/10/Diary-New.html"><![CDATA[<h2 id="애증이라는-개발의-존재">애증이라는 개발의 존재</h2>
+
+<p>사측 해커톤에 참여하고 채팅방에서 꾸준히 다른 개발자들과 대화하며 내 프로젝트를 공유했는데 아이디어부터 디자인까지 똑같은 팀이 상을 받았다. 심지어 상을 받을거라고 생각했던 개발자들은 유색인종이었고(그들의 프로젝트가 매우 훌륭했다.) 그들과는 어떠한 말조차 못하고 다음 기회를 기약하며 계속 다른 아이디어로 빌딩하자고 씁쓸한 이야기를 주고 받았다.
+해당 아이디어를 낼 수 있던 이유는 내가 공부하고 있던 환경과 배경으로 인해서 내 주변사람들이 도움받았으면 하는 마음으로 만들었던 프로젝트고 프로젝트에 친절하게도 데이터베이스 스키마와 어떻게 개발했는지 나의 이야기를 담았으나 심사위원 측에서는 AI 핑계를 대고 수익모델과 UX를 운운하며 내 의견을 묵살했다. 그는 claude를 이용해서 rust를 코딩할 수 있는지 의문이 있던 데브렐이었다.</p>
+
+<blockquote>
+  <p>“내 탓이오.”</p>
+</blockquote>
+
+<p>이걸 해결하는 과정에서 내가 디코에서 질문하다가 쫓겨난 도메인 동아리에 대한 이야기를 들었고 블록체인 도메인에 대해서 안 좋은 인상이 남은게 사실이다. 물론 나의 태도를 돌아봤다. 존경하는 개발자 분이 “내 탓이오.”를 하고 내게 피드백 주신 분들에게 고마움을 느껴보라고 하셨다. 그것으로 인해서 해결 하는 과정 내내 내 실책에 대해서 돌아봐야 됐고 눈물이 멈추지 않았다. 그러나 내 문제를 마주하고 태도를 달리하니 모든것을 자책하고 피드백하지 말라는 분들로 인해서 다시 생각하게 됐다. 피드백 루프를 돌릴 때 다 내탓이라고 생각하면 번아웃이 빨리오게 되고 누구나 실수는 하는 것이라고 알려주셨다. 대신에 같은 문제를 마주한다면 다른 해결방법을 찾고 나아가면 된다.</p>
+
+<blockquote>
+  <p>돈이 움직이는 풀이 작고 유동성이 빠르니 MEV로 수익을 내자.</p>
+</blockquote>
+
+<p>개발자들이 많은 디스코드에 있어왔고 내가 생각하는게 평범하다고 느꼈는데 개발에 지식이 없는 사람들은 나를 오해할 수 밖에 없다고 하셨다. 이더리움이면 이더리움, 솔라나면 솔라나에 대한 철학적인 배경과 의심이 있는지 또는 그것을 어떻게 생각하는지 여쭤봤는데 상당히 냉소적이었다. 이더리움이 Go로 네트워크 패키징을하고 typescript를 개선해서 solidity를 쓰는 것에 대해서 의문을 품어본 적은 없는지, 왜 그들이 기술 논문을 쓰는지, 그게 해당 교수님의 실적이 될 수 있는 key인지 궁금했는데 내가 말하는 태도나 기본이 안되어있다고 하셨다. 뭘 자꾸 숨기고 질문하는 거 같다는 이야기를 많이 들었는데, 숨기는 바가 없었다. 물론 개발자들이나 박사님들은 내가 뭘 얘기하는지 정확하게 이해하고 있었다. 이 때 여러 오픈채팅방에서 쫓겨났는데 더 많은 사람을 만나보라고 하셨다. 정말 크게 도움 받았다.</p>
+
+<p>그리고 이더리움에 대한 내 생각.
+Go로 개발했기에 접근성이 낮아서 많은 컬트 유저들을 보유할 수 있다.
+Typescript기반 Solidity로 개발해서 생산성이 좋다.
+실용 논문은 산업계에 진입하는 교수님들의 성과로 직결되는 것이니 당연한 것이다.</p>
+
+<p>솔라나에 대한 내 생각.
+C/C++로 노드 최적화를 해낼 생각을 한 것이 훌륭한 접근이라고 생각했고 그렇기에 솔라나를 애정했다.
+Rust로 개발 생산성을 늘렸고 직접 개발해보니 왜 Rust가 편한지 이해할 수 밖에 없었다. 디버깅에 시간 날리지 않아도 됨.
+실용 논문은 왜 쪼개서 올리는지 이해했다.</p>
+<ol>
+  <li>카피 우려</li>
+  <li>레퍼런스 작성해두면 어차피 비슷한 학습을 해온 사람들은 뭘하는지 알 수 밖에 없음</li>
+  <li>내가 블로그에 자세한 정보를 작성해두지 않는 것과 같은 이유임</li>
+</ol>
+
+<p>데브렐들은 정보가 내가 바라보는 것보다 아쉬웠고 프로젝트 카피에 대응이 되지 않았다. 그러나 최선을 다해서 도와주려고 하셨던게 기억나고 정말 고맙다고 생각하고 있다. 빌더 채팅방을 폐쇄적으로 운영하셨는데 그 이유도 이해가 됐다.
+창업을 위해서 달리는 분들이 내 정보력을 좋아했으나(도메인 또는 네트워크에 대한 PoC였는데 상용되는 서비스가 있는 것을 알고 확인해 보는게 좋겠다고 얘기 드렸고 나는 원래 전공에서 가장 좋아하고 잘했던 부분이 네트워크 분석이어서 대화가 편했다. 그리고 Defi 프로젝트 분석은 진입하며 만났던 해외 개발자들과 자주 했다.) 나와 사이가 좋지 않았던 동아리와 회사로 인해서 데브렐들에게 민원을 무척이나 넣었다고 해서 운영진들이 안쓰러운 마음이었다. 운영진임에도 그들에게 권력이 없는 시스템이라는 것을 느꼈다. 어린 나이에 많은 것들을 경험하는구나 싶어서 그냥 내가 관계를 끊고 도메인을 포기했다.
+그리고 해당 내용을 유튜브로 만들고 싶다는 분이 컨텍을 주셨는데 어린 학생들을 상대로 그러고 싶지 않았고 우선 내가 투자자여서 그렇게까지 큰 잡음을 바라지 않았다. 밈코인으로 날린 돈 보다 스테이킹 해둔 돈이 소중했다.</p>
+
+<p>사측 해커톤 채팅방 관리자도 상을 받았었는데 그가 내 sns에 쫓아와서 대뜸 욕부터 했다. 나는 다른 우승자에 대해서 리스펙이 있었는데 이 때 사라졌다. 왜 내가 아이디어도 주고 디자인 레퍼런스까지 줬는데 상은 다른 팀이 받아놓고 니가 왜 찾아오냐? 억울한 마음이 컸으나 그런 운영을 해왔기에 정확한 심사기준을 요구하는 내가 싫었던 것이다. 그리고 내가 연구한 git-log-hack을 이용하면 커밋 조작은 쉽다는 것을 이용했을 것이라고 생각한다. 심사결과가 한달이나 넘게 늦어졌으니 뭐..대다수 내가 귀찮은지 무시했고 내가 무슨 말을 하는지 정확하게 이해하고 있던 분들은 노드 운영을 하셨던 개발자 분들과 조금이라도 개발을 해보셨던 분들 그리고 박사님들이다. 내가 엉엉울고 있을 때 다음에는 조금 더 Formal하게 요청하는게 좋다고 방법들을 알려주셨다. 지금은 자기위로 수준에 그치는데 나는 혼자 해야 됐고, 심사위원들이 채팅방에서 내쫓았기에 도메인에 대한 신뢰도가 박살났다. 이 때 체력을 전부 소진해서 밥도 먹기 힘든 상태로 울어댔다. 그러나 너무 고마웠던 것은 사실이었고 그 분들도 준비하시는게 있으니 시간 내어주셔서 고마웠다. 그리고 추천받은 원서로 공부하니 배움이 많이 늘었다.</p>
+
+<p>배타적인 국내 도메인에서 자리잡기 힘들기에 우호적인 중국 개발자들과 방대한 리소스의 부트캠프를 진행할 수 밖에 없었는데 이 때 마음이 조금 누그러졌다. 물론 체력도 소진하였고 서러움에 맨날 울면서 나아가느라 중간에 드랍했는데 중국측 운영진들이 너무나 친절했기에 고마웠다. 그들은 공개적으로 내가 말했던(트랜잭션 선점 봇 또는 스나이핑 봇)에 대한 정보가 이미 우월했으며 브레인스토밍부터 다수의 트랜잭션에서 선점할 수 있는 agent를 만드는 강의를 이미 만들어두고 로블록스 게임하면서 무료로 강의하던게 기억난다. 하하, 정말 유쾌한 분위기였고 나는 중국어로 대화 할줄 아는데 반쯤은 못 알아들어서 올려주는 영상을 보면서 계속 학습해야 됐다.</p>
+
+<blockquote>
+  <p>도움 주셨던 분들이 말씀 해주셨던 것처럼 배움의 기회로 나아가면 된다.</p>
+</blockquote>
+
+<p>그래도 나는 할 수 있는 최선을 했는데 다음에 비슷한 일이 발생하게 된다면(해커톤은 아닐 것이다.) 어떻게 나의 저작물을 보호해야 하는지 대응할 수 있는 방법론들이 여러가지 생겼다. 헤맨만큼 내 땅이라던 어르신들의 이야기가 틀리지 않았음을 알 수 있었다.</p>
+
+<blockquote>
+  <p>차라리 친구로 두자.</p>
+</blockquote>
+
+<p>언제든 상대가 누구라도 해도 배움이 있으면 배워야된다고 생각했고 이미 상은 그들이 가져갔으니 결과를 바꿀 수는 없다. 그래도 레퍼런스 정정 요청을 했다. 합리적이라고 생각했다. 그리고 스터디 교류를 하고 싶다고 했으나 내 영어 수준이 낮아서 고민이다. 그래서 외국인 친구들이랑 writing 모임을 시작했다. 글쓰기가 항상 부족했으니까.</p>
+
+<h2 id="드론-개발">드론 개발</h2>
+
+<blockquote>
+  <p>FPV, PX4, ArduPilot 뭐가 좋지?</p>
+</blockquote>
+
+<p>한참 8bit 컴퓨터를 만들어보려고 했는데 이미 교육용도의 키트가 많이 올라온 것을 보고 경쟁력이 없다고 느꼈다.
+그렇다고 ATmega를 하자니 자존심에 그거는 하기 싫고 intel 80시리즈를 하자니 자재를 구매하기 힘들었다.
+그런데 드론은 OS도 만들고 펌웨어도 만들고 정말 근본부터 다 하잖아? 그러니까 정말 재료나 소자를 만드는 것 빼고는 하는 거잖아. 그리고 저비용으로 만들어볼 수 있다는 생각에 관심 갖게 됐다.</p>
+
+<p>마침 대화가 잘 통하던 개발자 분께서 컴퓨터를 공부하고 있는데 그의 호기심 수준이 매우 높았으며 그가 소개시켜준 개발자가 매우 뛰어났다. 프로젝트 인원이 필요하다고 하기에 펌웨어 개발을 시작해보려고 한다.
+서로 발전할 수 있는 관계로 나아가고 싶다. 멋있는 친구다.</p>]]></content><author><name>devJZen</name></author><category term="diary" /><category term="Diary" /><summary type="html"><![CDATA[애증이라는 개발의 존재]]></summary></entry><entry><title type="html">7. dependabot으로 종속성 관리</title><link href="https://devjzen.github.io//study/2026/02/01/Study-7-dependabot.html" rel="alternate" type="text/html" title="7. dependabot으로 종속성 관리" /><published>2026-02-01T00:00:00+00:00</published><updated>2026-02-01T00:00:00+00:00</updated><id>https://devjzen.github.io//study/2026/02/01/Study-7-dependabot</id><content type="html" xml:base="https://devjzen.github.io//study/2026/02/01/Study-7-dependabot.html"><![CDATA[<h2 id="dependabot은-무엇인가">dependabot은 무엇인가?</h2>
+
+<blockquote>
+  <p>Configuring Dependabot security updates</p>
+</blockquote>
+
+<p><a href="https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configuring-dependabot-security-updates">공식문서</a>에 따르면 내가 매번 패치노트를 읽지 않아도 알아서 내게 읽어주는 친절한 봇이 있다는 걸 알게 됐다. 이래서 제조사의 공식문서를 자주 읽어봐야하는 것이구나 싶기도 하다.</p>
+
+<h2 id="어떻게-사용할-수-있을까">어떻게 사용할 수 있을까?</h2>
+
+<p><code class="language-plaintext highlighter-rouge">dependabot.yml</code> 을 만들 수 있으나 없어도 된다. Security updates 모드를 사용하면 취약점 발견되면 알아서 PR 요청 올려준다.</p>
+
+<h2 id="저장소에-라벨-생성">저장소에 라벨 생성</h2>
+
+<p>하..나는 깃허브 PR 요청에 익숙하지 않아서 어렵다고 느끼는데 dependabot이 추천해주는 방향으로 태그라벨도 찾아서 추가하고 직접 검토하고 서빙되는 공식문서를 읽으니까 편하다고 느낀다. 어감이 뭔가 다팬다 봇 같아서 ㅋㅋㅋㅋㅋㅋ재밌는 거 같다…요즘 재미찾기가 너무 어려워서(사실 잘생긴 사람들을 보면 재밌음) 이런 것에 재미느낀다 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>]]></content><author><name>devJZen</name></author><category term="study" /><category term="study" /><summary type="html"><![CDATA[dependabot은 무엇인가?]]></summary></entry><entry><title type="html">6. Vim</title><link href="https://devjzen.github.io//study/2026/01/22/Study-6-Vim.html" rel="alternate" type="text/html" title="6. Vim" /><published>2026-01-22T00:00:00+00:00</published><updated>2026-01-22T00:00:00+00:00</updated><id>https://devjzen.github.io//study/2026/01/22/Study-6-Vim</id><content type="html" xml:base="https://devjzen.github.io//study/2026/01/22/Study-6-Vim.html"><![CDATA[<h2 id="vim은-무엇인가">Vim은 무엇인가?</h2>
+
+<blockquote>
+  <p>Vim - the ubiquitous text editor</p>
+</blockquote>
+
+<p><a href="https://www.vim.org/">공식 문서</a>에 따르면 유비쿼터스 텍스트 에디터라고 표현하고 있다. 그렇다면 유비쿼터스란 무엇인가? 대학 시절에 유비쿼터스에 대해서 배울 때 무선 기기에 대해서 배우고, IoT에 대해서 배웠다. 쉽게 접근하고 사용할 수 있어서 유비쿼터스라고 배웠는데 Vim은 내게 너무 힘든 것이다. 그럼 왜 유비쿼터스라고 했는지 알아보자..</p>
+
+<h2 id="ubiquitous는-무엇인가">Ubiquitous는 무엇인가?</h2>
+
+<blockquote>
+  <p>언제 어디서든 접근할 수 있는 것</p>
+</blockquote>
+
+<p>시간과 장소에 구애받지 않고 언제나 네트워크에 접속할 수 있는 통신 환경. 라틴어의 유비쿼터스는 ‘언제나 어디에나 존재한다’는 뜻을 가지고 있으며, 정보 통신 분야에서는 시간, 장소를 초월한 통신 환경을 목표로 한다. 예를 들면, 전화 또는 인터넷으로 가정에 있는 보일러를 켜고 끌 수 있으며, 해외 공장에 있는 기계를 자기 자리에서 원격으로 제어할 수 있다. 유비쿼터스는 이러한 여러 가지 기기나 사물에 컴퓨터를 집어 넣어 사용자와의 커뮤니케이션을 쉽게 해주는 정보 기술(IT) 환경 또는 정보 기술 패러다임을 뜻한다. ⏤ <a href="https://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=062039-4">정보통신용어사전</a></p>
+
+<h2 id="그럼-왜-vim은-유비쿼터스라고-했을까">그럼 왜 Vim은 유비쿼터스라고 했을까?</h2>
+
+<blockquote>
+  <p>이 미친것은 작성하기 전까지는 md 파일의 문법 지적도 안 해준다.</p>
+</blockquote>
+
+<p>이 미친것…왜 내가 터미널 환경에서만 개발한다고 했을까 스스로 뉘우치고 있지만 지적 허영을 즐겼던 나로서는 사실 이런 고통이 조금 훈장같다.
+한참 러스트로 웹을 구현하고 있는데 터미널로 md 파일 하나 작성하고 나면 problem이 여러개 나타나서 내가 헛공부를 했다는 걸 깨닫게 해준다..
+바이브에 미쳐있었기에 이런 문제를 확인할 수 없었으나 사상누각을 여러번 경험해와서 이제는 더 이상 물러설 수 없다는 심정으로 Vim을 사용해보려고 한다…그렇다면 이렇게나 은은한 스트레스를 선사하는 빔은 왜 스스로 유비쿼터스라고 했을까…?</p>
+
+<p>“Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as “vi” with most UNIX systems and with Apple OS X.”</p>
+
+<p>공식 문서에 쓰여있다. 리눅스 환경 뿐만아니라 유닉스를 비롯하여 다양한 OS에서 사용할 수 있기에 유비쿼터스라고 했을까…?
+전세계 개발자들이 구현해내는 디스플레이 혁명을 바라보는 나에게 컴퓨터라는 것과 웹과 앱, OS의 한계는 너무나도 고통스럽다.</p>
+
+<blockquote>
+  <p>[!note] seravo에서도 같은 고민을 했다!<br />
+내가 생각했던 고민의 결과를 <a href="https://linuxnatives.net/2020/vim-the-ubiquitous-text-editor-and-your-new-best-friend">seravo</a>의 포스팅으로 마주할 수 있었다.<br />
+seravo는 핀란드 리눅스 전문가들이 작성하는 블로그라고 한다.<br />
+뉴비에게 힘든 것이 리눅스이지만 익숙해지면 편리하다고 하니 열심히 써봐야겠다.</p>
+</blockquote>]]></content><author><name>devJZen</name></author><category term="study" /><category term="study" /><summary type="html"><![CDATA[Vim은 무엇인가?]]></summary></entry><entry><title type="html">4. SSH? GPG?</title><link href="https://devjzen.github.io//study/2026/01/05/Study-4-Git-GPG.html" rel="alternate" type="text/html" title="4. SSH? GPG?" /><published>2026-01-05T00:00:00+00:00</published><updated>2026-01-05T00:00:00+00:00</updated><id>https://devjzen.github.io//study/2026/01/05/Study-4-Git-GPG</id><content type="html" xml:base="https://devjzen.github.io//study/2026/01/05/Study-4-Git-GPG.html"><![CDATA[<blockquote>
+  <p>커밋에 서명하고 싶다.</p>
+</blockquote>
+
+<p>학습을 하다보니 계정 도용 사례가 있는 걸 보고 커밋에 서명을 직접 해보기로 했다.
+그래서 찾아본 SSH와 GPG의 차이점을 설명해보려고 한다.</p>
+
+<h2 id="ssh란">SSH란?</h2>
+
+<p>SSH (Secure Shell)</p>
+
+<p>용도: 인증 (Authentication) - “나는 이 사람이 맞다”</p>
+
+<ul>
+  <li>Git 원격 저장소 접근 시 사용</li>
+  <li>GitHub/GitLab에 push/pull 할 권한 확인</li>
+  <li>비밀번호 없이 자동 로그인</li>
+</ul>
+
+<p>### SSH 사용 예시
+  git clone git@github.com:username/repo.git
+  git push origin main</p>
+
+<h2 id="gpg란">GPG란?</h2>
+<p>GPG (GNU Privacy Guard)</p>
+
+<p>용도: 서명 (Signing) - “이 커밋은 내가 작성한 게 맞다”</p>
+
+<ul>
+  <li>커밋/태그에 디지털 서명</li>
+  <li>커밋 위조 방지</li>
+  <li>GitHub에서 “Verified” 배지 표시</li>
+</ul>
+
+<p>### GPG 사용 예시
+  git commit -S -m “message”  # 서명된 커밋
+  git tag -s v1.0.0           # 서명된 태그</p>
+
+<p>핵심 차이</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>SSH</th>
+      <th>GPG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>목적</td>
+      <td>접근 권한 확인</td>
+      <td>작성자 신원 확인</td>
+    </tr>
+    <tr>
+      <td>언제</td>
+      <td>push/pull/clone 시</td>
+      <td>commit/tag 시</td>
+    </tr>
+    <tr>
+      <td>보장</td>
+      <td>“이 사람이 접근 권한 있음”</td>
+      <td>“이 코드를 정말 이 사람이 썼음”</td>
+    </tr>
+    <tr>
+      <td>필수?</td>
+      <td>HTTPS 대신 사용 가능</td>
+      <td>선택사항 (보안 강화용)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>실무 사용</p>
+
+<ul>
+  <li>SSH: 거의 모든 개발자가 사용 (편의성)</li>
+  <li>GPG: 오픈소스 메인테이너, 보안 중요한 프로젝트에서 사용</li>
+</ul>
+
+<p>요약: SSH는 “로그인”, GPG는 “도장/인장”</p>
+
+<h2 id="워크-플로우">워크 플로우</h2>
+
+<blockquote>
+  <p>설치 - generate gpg - github에 등록</p>
+</blockquote>
+
+<ol>
+  <li>설치</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># mac 기준 brew로 설치</span>
+brew <span class="nb">install </span>gpg
+
+<span class="c"># gpg 키 생성</span>
+gpg <span class="nt">--full-generate-key</span>
+
+<span class="c"># default로 설정 따라가기</span>
+<span class="c"># 만료 날짜 원하는 만큼...나는 최소 3개월에서 최대 1년 갱신한다.</span>
+<span class="c"># 생성 후에 keyid 확인</span>
+gpg <span class="nt">--list-secret-keys</span> <span class="nt">--keyid-format</span><span class="o">=</span>long
+<span class="c"># gpg --list-keys는 가지고 있는 공개키를 다 볼 때 사용한다.</span>
+<span class="c"># pub ed25519 뒤에 오는 id 확인</span>
+
+gpg <span class="nt">--armor</span> <span class="nt">--export</span> &lt;키_ID&gt;
+<span class="c"># Git에서 등록</span>
+</code></pre></div></div>
+
+<h3 id="암호화-서명-차이">암호화 서명 차이</h3>
+
+<ul>
+  <li>RSA : 오래된 시스템에서 사용된다.</li>
+  <li>ECC (타원 곡선 함수)로 권장한다. Git에서도 사용하고 있다.</li>
+</ul>]]></content><author><name>devJZen</name></author><category term="study" /><category term="study" /><summary type="html"><![CDATA[커밋에 서명하고 싶다.]]></summary></entry><entry><title type="html">5. Shell? Bash? Zsh?</title><link href="https://devjzen.github.io//study/2026/01/05/Study-5-Shell.html" rel="alternate" type="text/html" title="5. Shell? Bash? Zsh?" /><published>2026-01-05T00:00:00+00:00</published><updated>2026-01-05T00:00:00+00:00</updated><id>https://devjzen.github.io//study/2026/01/05/Study-5-Shell</id><content type="html" xml:base="https://devjzen.github.io//study/2026/01/05/Study-5-Shell.html"><![CDATA[<p>용어 정리</p>
+
+<ol>
+  <li>
+    <p>Shell (셸) - 일반적인 용어
+    - 명령줄 인터페이스를 제공하는 프로그램 전체를 지칭
+    - bash, zsh, fish 등을 모두 포함하는 개념
+    - “터미널에서 shell을 사용한다”</p>
+  </li>
+  <li>
+    <p>zsh (Z Shell) - 구체적인 shell 종류
+    - 현재 macOS 기본 shell (Catalina 10.15 이후)
+    - bash의 기능 + 추가 편의 기능
+    - “zsh을 사용한다”</p>
+  </li>
+  <li>
+    <p>bash (Bourne Again Shell)
+    - 예전 macOS 기본 shell (Catalina 이전)
+    - Linux에서 가장 많이 사용
+    - “bash를 사용한다”</p>
+  </li>
+  <li>
+    <p>터미널 (Terminal)
+    - shell을 실행하는 GUI 애플리케이션
+    - macOS의 Terminal.app, iTerm2 등</p>
+  </li>
+</ol>
+
+<p>표현 방법</p>
+
+<p># 모두 맞는 표현
+  “터미널에서 명령어 실행했어”
+  “shell에서 jekyll 실행했어”
+  “zsh에서 bundle exec 명령어 쳤어”
+  “커맨드라인에서 작업했어”
+  “CLI에서 실행했어”</p>]]></content><author><name>devJZen</name></author><category term="study" /><category term="study" /><summary type="html"><![CDATA[용어 정리]]></summary></entry></feed>
